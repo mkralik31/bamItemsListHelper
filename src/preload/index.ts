@@ -1,0 +1,3 @@
+import { contextBridge, ipcRenderer } from 'electron'
+import type { ReportSelection } from '../report-fields'
+contextBridge.exposeInMainWorld('bamItems', { loadProduct: (url: string) => ipcRenderer.invoke('product:load', url), createReport: (project: unknown, selection: ReportSelection) => ipcRenderer.invoke('report:create', project, selection), revealReport: () => ipcRenderer.invoke('report:reveal'), saveProject: (project: unknown, path?: string) => ipcRenderer.invoke('project:save', project, path), openProject: () => ipcRenderer.invoke('project:open'), lastProject: () => ipcRenderer.invoke('project:last') })
