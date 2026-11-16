@@ -8,8 +8,8 @@
     "build": "electron-vite build",
     "start": "electron-vite preview",
     "package": "npm run build && electron-builder",
-    "package:mac": "npm run build && electron-builder --mac dmg zip --arm64 --x64",
-    "package:win": "npm run build && electron-builder --win zip --x64",
+    "package:mac": "npm run build && electron-builder --mac dmg zip --arm64 --x64 --config.directories.output=release/macos",
+    "package:win": "npm run build && electron-builder --win zip --x64 --config.directories.output=release/windows",
     "test": "node --experimental-strip-types --test src/main/product-extraction.test.ts src/renderer/src/product-items.test.ts",
     "typecheck": "tsc --noEmit"
   },
@@ -36,6 +36,7 @@
   "build": {
     "appId": "sk.grandpano.bam-items-list-helper",
     "productName": "BAM Items List Helper",
+    "icon": "src/renderer/public/bam-logo.png",
     "asar": true,
     "files": [
       "out/**",

@@ -201,7 +201,7 @@ function App(): ReactElement {
 
   return <main className="app-shell">
     <header className="topbar">
-      <div className="brand"><img src="/bam-logo.png" alt="bam!" /><span>ITEMS LIST</span></div>
+      <div className="brand"><img src="./bam-logo.png" alt="bam!" /><span>ITEMS LIST</span></div>
       <nav aria-label="Akcie projektu">
         <button className="toolbar-button" type="button" onClick={newProject}>Nový projekt</button>
         <button className="toolbar-button" type="button" onClick={openProject}>Otvoriť</button>

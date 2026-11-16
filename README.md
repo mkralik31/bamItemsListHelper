@@ -30,8 +30,8 @@ npm run package:mac
 npm run package:win
 ```
 
-- `release/*.dmg` je macOS balík; vyberte podľa procesora (`arm64` pre Apple Silicon, bez `arm64` pre Intel).
-- `release/*-win.zip` je Windows x64 balík. Po rozbalení spustite `BAM Items List Helper.exe`.
+- `release/macos/*.dmg` je macOS balík; vyberte podľa procesora (`arm64` pre Apple Silicon, bez `arm64` pre Intel).
+- `release/windows/*-win.zip` je Windows x64 balík. Po rozbalení spustite `BAM Items List Helper.exe`.
 - Balíky momentálne nie sú podpísané Apple ani Microsoft certifikátom, preto môže systém pri prvom otvorení upozorniť na neznámu aplikáciu.
 
 Viac technického kontextu: [AGENTS.md](AGENTS.md), [PROJECT_INFO.md](PROJECT_INFO.md).

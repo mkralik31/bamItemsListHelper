@@ -29,7 +29,7 @@ Lokálna desktopová aplikácia pre Grandpano/BAM na evidenciu produktov v inter
 - nooma môže vracať 429 aj pre Electron a lokálny `curl`; neobchádzať cez tretiu stranu bez súhlasu.
 - Rozmery sú heuristika textu; varianty, mena a medzisúčty sú primárne optimalizované na EUR.
 - Chýbajú automatické testy, lint, validácia schémy JSON a režim pre konflikty/poškodené súbory.
-- Balíky nie sú podpísané/notarizované a používajú predvolenú Electron ikonu.
+- Balíky nie sú podpísané/notarizované; používajú ikonu z dodaného BAM loga.
 
 ## Next
 
@@ -37,4 +37,4 @@ Lokálna desktopová aplikácia pre Grandpano/BAM na evidenciu produktov v inter
 2. Validácia/migrácia `.json`, upozornenie na neuložené zmeny, bezpečnejší „Nový projekt“.
 3. Doplniť rozmery do HTML/XLSX a lepšie riešiť meny/varianty.
 4. Testy extraktorov a UI; ESLint/formatter.
-5. Podpísanie/notarizácia macOS a podpisovanie Windows balíka; vlastná ikona aplikácie.
+5. Podpísanie/notarizácia macOS a podpisovanie Windows balíka.
